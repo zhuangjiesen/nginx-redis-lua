@@ -1,7 +1,7 @@
-# lua-nginx 中 redis 的连接模块封装
+# 基于lua-resty-redis 的 nginx 中 lua-redis 的连接模块封装
 
 
-#### app_redis_client.lua
+#### lua-resty-redis 封装模块app_redis_client.lua
 代码如下：
 
 ```
