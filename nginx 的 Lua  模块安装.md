@@ -33,24 +33,28 @@ export LUAJIT_INC=/usr/local/luajit/include/luajit-2.0
 ```
 
 ### NDK与Lua_module
+之前用Nginx1.4版本，版本太老
+
+[官网，可以查最新版](https://github.com/openresty/lua-nginx-module)
 
 ```
 
 wget -c https://github.com/simpl/ngx_devel_kit/archive/v0.2.18.tar.gz
-wget -c https://github.com/chaoslawful/lua-nginx-module/archive/v0.8.6.tar.gz
-tar xzvf v0.2.18
-tar xzvf v0.8.6
+wget -c https://github.com/chaoslawful/lua-nginx-module/archive/v0.9.3.tar.gz
+tar xzvf v0.2.18.tar.gz
+tar xzvf v0.9.3.tar.gz
 
 ```
 
 #### 编译安装Nginx
+nginx 1.11.2 版本
 
 ```
 
-wget -c http://nginx.org/download/nginx-1.4.2.tar.gz
-tar xzvf nginx-1.4.2.tar.gz
-cd nginx-1.4.2
-./configure --add-module=../ngx_devel_kit-0.2.18/ --add-module=../lua-nginx-module-0.8.6/
+wget -c http://nginx.org/download/nginx-1.11.2.tar.gz
+tar -xzvf nginx-1.11.2.tar.gz
+cd nginx-1.11.2/
+./configure --add-module=../ngx_devel_kit-0.2.18/ --add-module=../lua-nginx-module-0.9.3/
 make
 make install
 
