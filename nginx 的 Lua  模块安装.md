@@ -1,4 +1,7 @@
 # nginx 的 Lua  模块安装
+
+### 开涛的博客上 nginx版本 1.4.2 版本太老
+### 这个 nginx 版本 1.11.2
 ### LuaJIT
 
 ```
@@ -37,12 +40,14 @@ export LUAJIT_INC=/usr/local/luajit/include/luajit-2.0
 
 [官网，可以查最新版](https://github.com/openresty/lua-nginx-module)
 
+[](https://github.com/openresty/lua-nginx-module#data-sharing-within-an-nginx-worker)
+
 ```
 
-wget -c https://github.com/simpl/ngx_devel_kit/archive/v0.2.18.tar.gz
-wget -c https://github.com/chaoslawful/lua-nginx-module/archive/v0.9.3.tar.gz
-tar xzvf v0.2.18.tar.gz
-tar xzvf v0.9.3.tar.gz
+wget -c https://github.com/simpl/ngx_devel_kit/archive/v0.3.0.tar.gz
+wget -c https://github.com/chaoslawful/lua-nginx-module/archive/v0.10.8.tar.gz
+tar xzvf v0.3.0.tar.gz
+tar xzvf v0.10.8.tar.gz
 
 ```
 
@@ -54,7 +59,8 @@ nginx 1.11.2 版本
 wget -c http://nginx.org/download/nginx-1.11.2.tar.gz
 tar -xzvf nginx-1.11.2.tar.gz
 cd nginx-1.11.2/
-./configure --add-module=../ngx_devel_kit-0.2.18/ --add-module=../lua-nginx-module-0.9.3/
+./configure --add-module=/home/nginx/ngx_devel_kit-0.3.0/ --add-module=/home/nginx/lua-nginx-module-0.10.8/ 
+
 make
 make install
 
@@ -62,7 +68,7 @@ make install
 
 #### 编译完带有 lua 模块的 nginx 
 目录：
-##### /home/nginx-1.4.2/objs 
+##### /home/nginx-1.11.2/objs 
 
 
 ### 检验
