@@ -14,6 +14,7 @@
 
 ##### 镜像下载完是 tar文件
 
+[docker基本操作](https://github.com/zhuangjiesen/reading-learning-coding/blob/master/docker/docker%20操作.md)
 
 ##### docker  导出 images 命令: 
 
