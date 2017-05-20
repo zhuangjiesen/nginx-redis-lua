@@ -1,5 +1,8 @@
 # nginx 的 Lua  模块安装
 
+#### 或者利用docker 直接安装我安装配置好的 nginx docker镜像(已经安装好Lua模块)
+[nginx_docker镜像](https://github.com/zhuangjiesen/nginx-redis-lua/blob/master/nginx%20docker%20镜像.md)
+
 ### 开涛的博客上 nginx版本 1.4.2 版本太老
 ### 这个 nginx 版本 1.11.2
 ### LuaJIT
